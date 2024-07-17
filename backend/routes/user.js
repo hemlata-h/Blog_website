@@ -1,16 +1,3 @@
-// const express = require('express');
-// const Router = express.Router();
-
-// // const app = express();
-
-//  Router.get('/new',(req,resp)=>{
-//     resp.render("article/new");
-// })
-// Router.post('/',(req,resp)=>{
-//     console.log("hello");
-// })
-
-// module.exports = Router;
 
 const express = require('express');
 const Router = express.Router();
@@ -55,16 +42,8 @@ Router.post('/edit/:id', async (req, resp) => {
        }
    );
 
-   resp.redirect('/'); // or wherever you want to redirect after the update
+   resp.redirect('/');
 });
-
-// Router.post('/edit/:id',async (req,resp)=>{
-//    const data =  await Article.updateOne({_id:req.params.id},{$set:{content:req.body.content}});
-   
-
-//   resp.redirect('/')
-
-// })
 
 Router.post('/', (req, resp) => {
      const article = new Article({
