@@ -1,0 +1,121 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(black,#722F37,#AF6E4D,#FF004F);
+}
+.top{
+    height: 13rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+font-size: 4rem;
+color: white;
+}
+
+button{
+    height: 3rem;
+    width: 12rem;
+    border: none;
+    border-radius: 7px;
+}
+
+a{
+    font-family:  monospace;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    color: #AF6E4D;
+}
+.column{
+    display: flex;
+   justify-content: center;
+    /* grid-template-rows: repeat(1fr,1fr,1fr); */
+    /* width: 100vh; */
+}
+.columnOne{
+    margin: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    /* // 'Gill Sans MT',  */
+    font-family:'Gill Sans MT','Trebuchet MS';
+    padding: 10px;
+    height: 17rem;
+    width: 20rem;
+    background-color:hsla(341, 52%, 72%, 0.2);
+    border-radius: 16px 32px;
+}
+.add{
+    border-radius: 7px 11px;
+    font-weight: bold;
+    color: white;
+    background-color:hsla(341, 52%, 72%, 50%);
+    height: 2rem;
+    width: 6rem;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(black,#722F37,#AF6E4D,hsl(341, 100%, 50%));
+}
+.Seclayout{
+    display: flex;
+    flex-direction: column;
+}
+.Secinner{
+    margin-top: 5rem;
+    display: flex;
+    /* flex-direction: column; */
+}
+.Secoutter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+    color: black;
+}
+.SeccolorBox{
+    height: 34.2rem;
+    width: 14rem;
+    
+    border-radius: 1px 8px;
+    background-color: hsla(0, 30%, 73%,55%);
+}
+
+.Sectitle{
+    height: 3rem;
+    width: 50rem;
+}
+.Secpost{
+    height: 15rem;
+    width: 50rem;
+}
+.Secmore{
+    height: 15rem;
+    width: 50rem;
+}
+.heading{
+    font-size: 1rem;
+color: white;
+position: relative;
+}
+.lorem{
+    font-weight: normal;
+    font-size: 0.9rem;
+    color: white;
+}
+.bottom{
+    margin-top: 5rem;
+ position: absolute;
+    bottom: 16rem; 
+} 

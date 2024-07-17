@@ -1,0 +1,21 @@
+<!-- <div>
+    <% if (article) { %>
+        <h1 style="color: white;"><%= article.title %></h1>
+       
+    <% } else { %>
+        <p>Article not found.</p>
+    <% } %>
+    </div> -->
+    
+    <form class="Secoutter" action="/article/edit/<%= article.id %>" method="POST">
+        <div class="Secinner">
+            <div class="SeccolorBox"></div>
+            <div class="Seclayout">
+                <input type="text" value="<%= article.title %>" class="Sectitle" name="title"></input>
+                <textarea type="text" placeholder="Your Post..." name="content" class="Secpost"><%= article.content %></textarea>
+                <textarea type="text" name="moreinfo" class="Secmore"><%= article.moreinfo %></textarea>
+                <button class="Secbutton" style=" margin-top: 1rem; background-color: hsla(341, 27%, 53%, 50%); font-weight: bolder; width: 8rem; height: 3rem; background-color: white; height: 2.5rem; border-radius: 4px; color: black;" type="submit">Update</button>
+            </div>
+        </div>
+    </form>
+    

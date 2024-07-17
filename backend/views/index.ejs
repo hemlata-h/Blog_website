@@ -1,0 +1,40 @@
+<div class="main">
+    <div class="inner">
+        <div class="top">
+            <h1>It's just a Blog</h1>
+            <button><a href="/article/new">Something New</a></button>
+        </div>
+    
+<div class="column" style="margin-left: 5rem;">
+<% article.forEach(element => { %>
+     
+    <div class="columnOne">
+        <h1 class="heading"><%= element.title.substring(0,15) %></h1>
+        <p class="lorem"><%= element.content.substring(0,200) %>...</p>
+     
+        <div class="bottom">
+            <button class="add"><a href="/article/<%= element.slug %>" style=" 
+            font-size: 1rem;
+                font-weight: bold;
+                color: white;
+                height: 2rem;
+                width: 6rem;">Read More</a></button>
+            <button class="add"><a href="/article/edit/<%= element.id %>" style=" 
+                font-size: 1rem;
+                    font-weight: bold;
+                    color: white;
+                    height: 2rem;
+                    width: 6rem;">Edit</a></button>
+            <button class="add"><a href="/article/delete/<%= element.id %>" style=" 
+                font-size: 1rem;
+                    font-weight: bold;
+                    color: white;
+                    height: 2rem;
+                    width: 6rem;">Delete</a></button>
+        </div>
+        </div>
+
+<% }); %>
+
+   
+</div>
